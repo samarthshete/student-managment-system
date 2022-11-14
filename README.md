@@ -1,14 +1,17 @@
-Employee-Management-System
-This employee management system consists of a Angular Front End and a Spring Boot Back End along with a PostgreSQL database.
+# Student-Management-System
+Student Management System web application using Spring Boot, Spring MVC, Thymeleaf, Spring Data JPA, and MySQL database. 
 
-Functionalities
-Create new employee
-View all employees
-Update existing employee
-Delete employee
-Search for an employee
-Used Technologies
-Front End - Angular
-Back End - Spring Boot
-Database - PostgreSQL and Spring JPA
-Front End Notifications - SweetAlert JS Library
+## Functionalities
+1. Create new employee
+2. View all employees
+3. Update existing employee
+4. Delete employee
+ 
+
+## Used Technologies
+1.Java 16
+2.Spring Boot
+3.Spring MVC
+4.Spring Data JPA ( Hibernate)
+5.MySQL
+6.Thymeleaf
