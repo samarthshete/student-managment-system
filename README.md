@@ -9,9 +9,9 @@ Student Management System web application using Spring Boot, Spring MVC, Thymele
  
 
 ## Used Technologies
-1.Java 16
-2.Spring Boot
-3.Spring MVC
-4.Spring Data JPA ( Hibernate)
-5.MySQL
-6.Thymeleaf
+1. Java 16
+2. Spring Boot
+3. Spring MVC
+4. Spring Data JPA ( Hibernate)
+5. MySQL
+6. Thymeleaf
