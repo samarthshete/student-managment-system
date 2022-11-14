@@ -12,24 +12,17 @@ import com.SMS.studentmanagmentsystem.service.StudentService ;
 public class StudentServiceImpl implements StudentService{
 
 	private StudentRepository studentRepository;
-	
+
 	public StudentServiceImpl(StudentRepository studentRepository) {
 		super();
 		this.studentRepository = studentRepository;
 	}
 
 	@Override
-//	public List<Student> getAllStudents() {
-//		return studentRepository.findAll();
-//	}
-	public List<Student> getAllStudents(){
-		List<Student> list =  (List<Student>)studentRepository.findAll();
-		return list;
+	public List<Student> getAllStudents() {
+		return studentRepository.findAll();
 	}
-	@Override
-	public List<Student> getByKeyword(String keyword){
-		return studentRepository.findByKeyword(keyword);
-	}
+
 	@Override
 	public Student saveStudent(Student student) {
 		return studentRepository.save(student);
@@ -47,7 +40,7 @@ public class StudentServiceImpl implements StudentService{
 
 	@Override
 	public void deleteStudentById(Long id) {
-		studentRepository.deleteById(id);	
+		studentRepository.deleteById(id);
 	}
 
 }

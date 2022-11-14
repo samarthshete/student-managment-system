@@ -20,9 +20,6 @@ import java.util.List;
 public class StudentController {
 
     private StudentService studentService;
-    @Autowired
-    StudentRepository repo;
-
 
     public StudentController(StudentService studentService) {
         super();
@@ -35,7 +32,6 @@ public class StudentController {
         model.addAttribute("students", studentService.getAllStudents());
         return "students";
     }
-
 
 
     @GetMapping("/students/new")
@@ -83,16 +79,6 @@ public class StudentController {
     public String deleteStudent(@PathVariable Long id) {
         studentService.deleteStudentById(id);
         return "redirect:/students";
-    }
-    @RequestMapping(path = {"/","/students/search"})
-    public String home(Student students, Model model, String keyword) {
-        if(keyword!=null) {
-            List<Student> list = studentService.getByKeyword(keyword);
-            model.addAttribute("list");
-        }else {
-            List<Student> list = studentService.getAllStudents();
-            model.addAttribute("list");}
-        return "index";
     }
 
 }

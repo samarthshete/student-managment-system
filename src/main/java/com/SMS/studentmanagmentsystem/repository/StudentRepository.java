@@ -12,7 +12,5 @@ import java.util.List;
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
 
-    @Query(value = "select * from students where first_name like %:keyword% or last_name like %:keyword%", nativeQuery = true)
-    List<Student> findByKeyword(@Param("keyword") String keyword);
 
 }
